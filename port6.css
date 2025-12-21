@@ -1,0 +1,472 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --main-font: 'Bebas Neue', sans-serif;
+    --title-font: 'Roboto', sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #464646, #1f1f1f);
+    animation: fadeIn 0.5s ease-in;
+    font-family: var(--title-font);
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color: #E50914;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 5px;
+    float: left;
+    padding-top: 5px;
+}
+.menu{
+    width: 550px;
+    float: right;
+    height: 70px;
+    margin-right: 35px;
+    margin-left: 30px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-right: 40px;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    color: gray;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    width: 1100px;
+    height: 565px;
+    padding: 20px;
+    background: #1b1b1b;
+    box-shadow: 0 0 20px #912121;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.box h2{
+    color: #fff;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    z-index: 1;
+}
+
+.video-box{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    z-index: 1;
+}
+
+.btn-play,
+.btn-info{
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-play{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-play:hover{
+    transform: scale(1.05);
+}
+
+.btn-info{
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #fff;
+}
+
+.btn-info:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+/* TYPES OF COMPUTERS */
+
+.ComSci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+
+}
+
+
+.ComDis{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+
+/* BOXES */
+.Table,
+.Vox{
+    padding: 30px;
+    border-radius: 20px;
+    background: #1b1b1b;
+    box-shadow: 0 0 20px #912121;
+    
+}
+
+.Table{
+    width: 350px;
+    height: 500px;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+.Table:hover{
+    transform: scale(1.03);
+}
+
+.Vox{
+    width: 770px;
+    height: 500px;
+}
+
+.Voxaria{
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #1b1b1b;
+    box-shadow: 0 0 20px #912121;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+.Voxaria:hover{
+    transform:translateY(-10px)
+}
+
+/* TEXT */
+.Contents h2,
+.discription h2,
+.classification h2{
+    color: #E50914;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #912121;
+    margin-bottom: 20px;
+}
+
+.Contents p{
+    font-size: 22px;
+    color: #fff;
+}
+
+.discription p,
+.classification p{
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+
+/* TABLE */
+.table-container{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.motherboard-table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #252525;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(145, 33, 33, 0.3);
+    table-layout: fixed;
+}
+
+.motherboard-table th{
+    background-color: #E50914;
+    color: #fff;
+    padding: 15px 8px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-right: 1px solid #333;
+}
+
+.motherboard-table td{
+    padding: 12px 8px;
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+    color: #ddd;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+.motherboard-table tr:nth-child(even){
+    background-color: #2a2a2a;
+}
+
+.motherboard-table tr:hover{
+    background-color: #333;
+}
+
+
+
+
+
+
+/*EXAMPLES*/
+
+
+.ComDis1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px 20px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+    z-index: 5;
+}
+
+.Voxaria1{
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #1b1b1b;
+    box-shadow: 0 0 20px #912121;
+    
+}
+.ComDis1:hover {
+    transform: scale(1.03);
+}
+
+/* TEXT */
+
+.Contents h2,
+.discription h2,
+.classification h2{
+    color: #E50914;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #912121;
+    margin-bottom: 20px;
+}
+
+.Contents p{
+    font-size: 22px;
+    color: #fff;
+}
+
+.discription p,
+.classification1 p{
+    font-size: 20px;
+    color: #fff;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* TABLE */
+
+.table-container1{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.motherboard-table1{
+    width: 100%;
+    border-collapse: collapse;
+    background: #252525;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(145, 33, 33, 0.3);
+    table-layout: fixed;
+}
+
+.motherboard-table1 th{
+    background-color: #E50914;
+    color: #fff;
+    padding: 15px 8px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-right: 1px solid #333;
+}
+
+.motherboard-table1 td{
+    padding: 12px 8px;
+    border-bottom: 1px solid #444;
+    border-right: 1px solid #444;
+    color: #ddd;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+.motherboard-table1 tr:nth-child(even){
+    background-color: #2a2a2a;
+}
+
+.motherboard-table1 tr:hover{
+    background-color: #333;
+}
+
+.motherboard-table1 th:nth-child(2), 
+.motherboard-table1 td:nth-child(2) {
+    width: 250px;
+    min-width: 90px;
+    text-align: center;
+}
+
+
+
+
+
+/*COMPARE AND CONTRAST*/
+
+.ComDis{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 50px 20px;
+    margin-top: 30px;
+}
+.Voxaria{
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #1b1b1b;
+    box-shadow: 0 0 20px #912121;
+}
+.classification1 h2{
+    color: #E50914;
+    font-family: var(--main-font);
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.classification1 p{
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    line-height: 1.5;
+    padding-left: 20px;
+
+}
+.Discussion h2{
+    color: #E50914;
+    font-family: var(--main-font);
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #912121;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.Back{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.Back_Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Back a{
+    text-decoration: none;
+}
